@@ -1,6 +1,6 @@
 # Discount Allocation System
 
-This project is a performance-based system designed to fairly distribute a fixed bonus pool (or "kitty") among sales agents. It leverages a multi-metric scoring model and includes robust safeguards to prevent extreme allocations, ensuring a balanced and equitable outcome.
+This project is a performance-based system designed to fairly distribute a fixed discount pool (or "kitty") among sales agents. It leverages a multi-metric scoring model and includes robust safeguards to prevent extreme allocations, ensuring a balanced and equitable outcome.
 
 ***
 
@@ -9,7 +9,7 @@ This project is a performance-based system designed to fairly distribute a fixed
 The bonus **kitty** is divided into two parts to ensure a mix of equal and merit-based compensation.
 
 -   **Base Allocation (10%):** This portion is distributed equally among all agents, providing a guaranteed minimum.
--   **Performance Allocation (90%):** This is the main part of the bonus, distributed based on each agent's **composite performance score**.
+-   **Performance Allocation (90%):** This is the main part of the discount, distributed based on each agent's **composite performance score**.
 
 ***
 
@@ -67,3 +67,33 @@ Make sure you have Node.js and npm installed. Then, run the following command in
 
 ```bash
 npm install
+
+
+**2. Run the Program**
+
+To execute the test suite and see the allocation logic in action, use the following command:
+
+```bash
+
+npm test
+
+
+
+
+```bash
+project-root/
+├── src/
+│   ├── index.ts                 # Main entry point (runs the tests)
+│   ├── types.ts                 # Shared types and interfaces
+│   └── services/
+│       ├── allocator.ts         # Core allocation logic
+│       └── justificationService.ts # Generates dynamic justifications
+├── tests/
+│   ├── testCases.ts             # Sample agent test cases
+│   └── testRunner.ts            # Orchestrates all test execution
+├── package.json
+├── tsconfig.json
+└── README.md 
+
+
+
