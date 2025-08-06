@@ -1,0 +1,14 @@
+{
+  "name": "discount-allocation-engine",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "description": "A discount allocation engine for managing and applying discounts based on various criteria.",
+  "scripts": {
+    "build": "tsc",
+    "test": "ts-node src/index.ts"
+  },
+  "devDependencies": {
+    "typescript": "^4.x",
+    "ts-node": "^10.x"
+  }
+}
