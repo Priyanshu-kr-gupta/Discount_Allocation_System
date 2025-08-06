@@ -67,7 +67,7 @@ Make sure you have Node.js and npm installed. Then, run the following command in
 
 ```bash
 npm install
-
+```
 
 **2. Run the Program**
 
@@ -78,6 +78,7 @@ To execute the test suite and see the allocation logic in action, use the follow
 npm test
 
 
+```
 
 
 ```bash
@@ -97,3 +98,4 @@ project-root/
 
 
 
+```
